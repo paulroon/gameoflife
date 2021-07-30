@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import Layout from "./components/Layout"
+import Grid from "./components/Grid"
+import Controls from "./components/Controls"
+
+import Gol from "./gol"
+
+const App = () => {
+
+  const title = `Game Of Life`
+  const introText = `John Horton Conway FRS (26 December 1937 – 11 April 2020) 
+                An English mathematician active in the theory of finite groups,
+                knot theory, number theory, combinatorial game theory and coding
+                theory. 
+                
+                He also made contributions to many branches of
+                recreational mathematics, most notably the invention of the
+                cellular automaton called the Game of Life.
+
+                This is the Game Of Life.`
+
+    const speed = 20
+    const viewPort = 800
+    const cells = 50
+
+
+    const gol = Gol.create(cells)
+
+    return (
+        <Layout title={title} intro={introText}>
+            <Controls gol={gol} speed={speed} />
+            <Grid gol={gol} viewPortWidth={viewPort} />
+        </Layout>
+    )
 }
 
-export default App;
+export default App
