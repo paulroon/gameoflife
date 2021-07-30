@@ -14,8 +14,6 @@ phases:
       - yarn
   build:
     commands:
-      - echo Testing...
-      - echo "No tests? dont worry about it, this happens..."
       - echo Building...
       - yarn build
 artifacts:
