@@ -1,34 +1,55 @@
-# Getting Started with Create React App
+# 🎮 Conway's Game of Life
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, interactive implementation of Conway's Game of Life using React, TypeScript, and Vite.
 
-## Available Scripts
+![Game of Life](https://path-to-your-screenshot.png)
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `yarn start`
+- 🖼️ Responsive grid layout
+- ⏯️ Play, pause, and step through generations
+- 🎨 Customizable cell colors
+- 🚀 Built with React and TypeScript for type safety
+- 🛠️ Vite for lightning-fast development and building
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🧬 About the Game of Life
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The Game of Life is a cellular automaton devised by mathematician John Conway in 1970. It's a zero-player game, meaning its evolution is determined by its initial state, requiring no further input.
 
-### `yarn test`
+Rules:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Any live cell with fewer than two live neighbours dies (underpopulation)
+2. Any live cell with two or three live neighbours lives on
+3. Any live cell with more than three live neighbours dies (overpopulation)
+4. Any dead cell with exactly three live neighbours becomes a live cell (reproduction)
 
-### `yarn build`
+## 🚀 Quick Start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```
+   git clone https://github.com/your-username/game-of-life.git
+   cd game-of-life
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
 
-### Deployment CI/CD
+   ```
+   npm install
+   ```
 
-AWS CodePipeline -> CodeDelpoy(see ./buildspec.yml) -> S3
+3. Run the development server:
+
+   ```
+   npm run dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173`
+
+## 🛠️ Built With
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [React Bootstrap](https://react-bootstrap.github.io/)
+- [SASS](https://sass-lang.com/)
